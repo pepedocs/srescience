@@ -38,7 +38,8 @@ export default {
         {
           text: "About",
           items: [
-            { text: 'Author', link: '/documentation/author' }
+            { text: 'Author', link: '/documentation/author' },
+            { text: 'Discussion', link: '/documentation/discuss' }
           ]
         }
       ]

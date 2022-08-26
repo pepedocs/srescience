@@ -23,6 +23,8 @@ export default {
             { text: 'What is a Service?', link: '/documentation/service'},
             { text: 'Service State', link: '/documentation/service-state'},
             { text: 'Service Variable', link: '/documentation/service-variable'},
+            { text: 'Service Variable Acceptability', link: '/documentation/service-variable-acceptability'},
+            { text: 'Service State Transition', link: '/documentation/service-state-transition'},
             { text: 'Service Modifier', link: '/documentation/service-modifier'}
           ]
         },

@@ -4,5 +4,5 @@
 >
 > - `T(St, Sv, x) = Stnext`
 >
-> - `Stnext = Next Active Service State`
+> - `Stnext = Next active service state`
 

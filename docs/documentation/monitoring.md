@@ -5,8 +5,7 @@
 ## Axioms
 
 1. A monitoring's performance is a function of the availability of observable service variables.
-<br/><br/>
 
-
+<br/>
 In practice, the set of service variables is presented as metrics and is usually in a time-series data type. Inference of service states is achieved by the evaluation of a rule expressed in a specific monitoring platform query language.
 <br/>

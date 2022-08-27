@@ -1,1 +1,0 @@
-import{_ as e,c as t,o as c,d as a}from"./app.e25c196d.js";const u=JSON.parse('{"title":"SRE Science","description":"","frontmatter":{},"headers":[],"relativePath":"index.md"}'),n={name:"index.md"},o=a("",8),i=[o];function r(s,d,_,p,l,h){return c(),t("div",null,i)}const S=e(n,[["render",r]]);export{u as __pageData,S as default};

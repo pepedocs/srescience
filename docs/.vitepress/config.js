@@ -2,11 +2,24 @@ export default {
   title: 'srescience',
   description: 'Site-Reliability Engineering Science',
   themeConfig: {
+    editLink: {
+      pattern: 'https://github.com/pepedocs/srescience/edit/main/docs/:path',
+      text: 'Edit this page on Github'
+    },
     nav: [
       { text: "Home", link: "index"},
-      { text: "Documentation", link: "/documentation/"}
+      { text: "Articles", link: "/documentation/"},
+      { text: "About", link: "/about/" }
     ],
     sidebar: {
+      '/about/': [
+        {
+         text: 'About',
+          items: [
+            { text: 'Author', link: '/about/' }
+          ]
+        }
+      ],
       '/documentation/': [
         {
           text: 'Overview',
@@ -33,13 +46,6 @@ export default {
           items: [
             { text: 'Observability', link: '/documentation/observability' },
             { text: 'Monitoring', link: '/documentation/monitoring' }
-          ]
-        },
-        {
-          text: "About",
-          items: [
-            { text: 'Author', link: '/documentation/author' },
-            { text: 'Discussion', link: '/documentation/discuss' }
           ]
         }
       ]

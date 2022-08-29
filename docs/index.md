@@ -7,6 +7,6 @@ Welcome to SRE Science!
 
 <br/>
 
-SRE Science is a collection of articles that attempts to study and define the SRE practice, its integral parts, and its derivatives using computer science concepts.
+SRE Science is a collection of articles that study and define the SRE practice, its integral parts, and its derivatives using computer science concepts.
 
 Start reading the [Articles](/documentation/).

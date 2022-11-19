@@ -8,7 +8,7 @@ Below we reuse the *finite-state machine* (FSM) model to define a service becaus
 
 1. Intuitively, a service can be fully expressed using FSM or automaton primitives and therefore there is no need to invent new abstract concepts.
 
-2. An FSM or automaton is a widely used and accepted computing model even in practice and therefore it can be widely adopted.
+2. An FSM or automaton is a widely used and understood computing model even in practice.
 <br/>
 
 ## Definition
@@ -28,9 +28,7 @@ Below we reuse the *finite-state machine* (FSM) model to define a service becaus
 
 ## Service Lifetime
 A service state **S**'s lifetime is the duration that starts from when S's ServiceStart became active for the first time and ends when S's ServiceEnd became active for the last time.
-
 <br/>
-
 
 To reinforce the knowledge of expressing a service using FSM primitives the following is provided to demonstrate how this expression can be applied to a naive cloud storage service.
 
@@ -41,7 +39,6 @@ A software service that provides the following services to its clients:
 2. Download a client's file data.
 3. Delete a client's file data.
 4. Update a client's file data.
-
 <br/>
 
 Using FSM primitives this service can be expressed as the following:
@@ -55,15 +52,27 @@ metadata:
 spec:
   - ServiceStates:
       - name: UploadRequested
-        description: Service is processing a client upload request
+        description: Service is processing a client upload request.
+        expect:
+          - The user must be presented with an upload progress widget with text "Upload Requested"
+          - At this point the upload progress widget progress must be 0%
       - name: UploadInProgress
         description: Service is uploading chunks of client file data.
+        expect:
+          - User must be presented with an upload progress widget updated with progress values from 0% to 100% in real-time
       - name: UploadFinalizing
         description: Service is finalizing a client's upload request.
+        expect:
+          - The user must be presented with  an upload progress widget with text "Upload Finalizing"
+          - At this point upload progress widget progress must be 100%
       - name: UploadError
         description: Service has encountered an error while processing a client's upload request.
+        expect:
+          - The user must be presented with an error widget with text "An error was encountered while uploading file {user_file}, please try again"
       - name: UploadThroughputLow
         description: Service's upload throughput is currently lower than average upload througput
+        expect:
+          - The user must be presented with a text message stating "The upload is taking longer than expected, please be patient."
       - name: Starting
         description: Service is starting.
       - name: Finalizing

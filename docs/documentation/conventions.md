@@ -7,7 +7,7 @@ The following are these conventions and can be skipped for now and referenced la
 **Axioms** are created as needed to support a definition.
 
 ### Writing service names
-A service state name is written in *camelcase* form and is an identifier that must be descriptive to a service state such as **UploadInProgress**, **UploadError**, or **UploadFinalizing**.
+A service state name is written in *camelCase* form and is an identifier that must be descriptive to a service state such as **UploadInProgress**, **UploadError**, or **UploadFinalizing**.
 
 ### Practical service data format
 Practical examples for service data such as service, service states, etc are presented in YAML format for usability and interoperability purposes.

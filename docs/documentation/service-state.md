@@ -2,9 +2,6 @@
 
 > **Formal Definition**: A service state **St** is a set of [service variables](./service-variable.md) that can happen in at least one of St's lifetimes.
 
-## Axioms
-
-1. A service state is identifiable by a subset of service variables and their values.
 
 ## Active or Inactive Service State
 An **active service state** St means that it is its parent service's current service state and therefore it's currently happening, otherwise, it is an **inactive service state**.
@@ -18,7 +15,6 @@ A service **S**'s **child** is a service state **St** that can happen sometime i
 
 ## Parent of a Service State
 A service **S** is called a **parent** of a service state **St** if and only if St is a child of S.
-
 <br/>
 
 In practice, a service state can be monitored by monitoring a subset of service variable values. Using the naive cloud storage service example, the values of service variables **totalUploadedBytes**, **uploadTimeElapsed**, and **uploadAverageThroughput** can be used to monitor a **UploadThrouputLow** service state that indicates the service's current upload throughput is lower than its average upload throughput.

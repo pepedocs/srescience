@@ -8,7 +8,7 @@ export default {
     },
     nav: [
       { text: "Home", link: "index"},
-      { text: "Articles", link: "/documentation/"},
+      { text: "Documentation", link: "/documentation/"},
       { text: "Conventions", link: "/documentation/conventions"},
       { text: "About", link: "/about/" }
     ],

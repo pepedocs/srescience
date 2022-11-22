@@ -1,12 +1,14 @@
-# SRE Science
-<br/>
-Welcome to SRE Science!
-<br/><br/>
+---
+layout: home
 
-> The lack of fundamental models in the current implementations of SRE poses a limitation to the evolution of the SRE practice into a robust discipline.
-
-<br/>
-
-SRE Science is a collection of articles that study and define the SRE practice, its integral parts, and its derivatives using computer science concepts.
-
-Start reading the [Articles](/documentation/).
+hero:
+  name: SRE Science
+  tagline: SRE Science is a collection of articles that study and define the SRE practice, its integral parts, and its derivatives using computer science theory.
+  actions:
+    - theme: brand
+      text: Read the docs
+      link: /documentation/
+    - theme: alt
+      text: View on GitHub
+      link: 'https://github.com/pepedocs/srescience'
+---

@@ -7,12 +7,19 @@ export default {
       text: 'Edit this page on Github'
     },
     nav: [
-      { text: "Home", link: "index"},
+      { text: "Home", link: "/articles/"},
       { text: "Documentation", link: "/documentation/"},
-      { text: "Conventions", link: "/documentation/conventions"},
       { text: "About", link: "/about/" }
     ],
     sidebar: {
+      '/articles/': [
+        {
+         text: 'Articles',
+          items: [
+            { text: 'What is service reliability?', link: '/articles/what-is-service-reliability' }
+          ]
+        }
+      ],
       '/about/': [
         {
          text: 'About',

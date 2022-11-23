@@ -3,9 +3,6 @@ Throughout this website, global conventions are used to encourage consistency in
 
 The following are these conventions and can be skipped for now and referenced later as needed.
 
-### Creating axioms
-**Axioms** are created as needed to support a definition.
-
 ### Writing service names
 A service state name is written in *camelCase* form and is an identifier that must be descriptive to a service state such as **UploadInProgress**, **UploadError**, or **UploadFinalizing**.
 

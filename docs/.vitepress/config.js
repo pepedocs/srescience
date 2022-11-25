@@ -17,7 +17,8 @@ export default {
         {
          text: 'Articles',
           items: [
-            { text: 'What is service reliability?', link: '/articles/what-is-service-reliability' }
+            { text: 'What is service reliability?', link: '/articles/what-is-service-reliability' },
+            { text: 'What is service alerting?', link: '/articles/what-is-service-alerting' }
           ]
         }
       ],

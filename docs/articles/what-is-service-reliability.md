@@ -2,10 +2,10 @@
 
 > **Formal Definition**: Service reliability is equal to the weighted sum of the probabilities of actual state transitions of a service complying with the expected state transitions of the same service.
 
-Before we can define service reliability we have to define first a few other important characteristics of a service.
+Before we can define service reliability we have to define first a few other important characteristics of a [service](/documentation/service.md).
 
 ## Tr_Expected
-A set of service state transitions that are expected to happen during a service's lifetime.
+A set of [service state](/documentation/service-state.md) transitions that are expected to happen during a [service's lifetime](/documentation/service-state.md#service-state-lifetime).
 
 `Tr_Expected = {TrE₀, TrE₁,…,TrEᵢ}`
 
@@ -13,7 +13,7 @@ Each service state transition TrEᵢ is a triple composed of the start state, en
 
 `TrEᵢ = {TrE_StartStateᵢ, TrE_EndStateᵢ, TrE_Inputᵢ}`
 
-**Concrete Example**
+## Concrete Example
 In practice, these expected service state transitions are the expected behavior of any aspect of a service due to how it was designed as a software service solving a particular business problem. For example, an online banking website must enable its users to log in (start state) using a login form, and when the login is successful it must present the user with a home page (end state) that contains a summary of his or her transactions.
 
 ## Tr_Actual

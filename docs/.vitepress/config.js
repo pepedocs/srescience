@@ -7,7 +7,8 @@ export default {
       text: 'Edit this page on Github'
     },
     nav: [
-      { text: "Home", link: "/articles/"},
+      { text: "Home", link: "/"},
+      { text: "Articles", link: "/articles/"},
       { text: "Documentation", link: "/documentation/"},
       { text: "About", link: "/about/" }
     ],

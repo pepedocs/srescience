@@ -3,7 +3,7 @@ Hello! I am [Jose Cueto](https://www.linkedin.com/in/josegavinecueto/) and I am 
 
 <br/>
 
-> Please note that all the content in this documentation or blog is not in any way sponsored or directed by a single organization but are the shared knowledge of all of its contributors.
+> Please note that all the content in this documentation or blog is not in any way sponsored or directed by any organization but are the shared knowledge of all of its contributors.
 
 <br/>
 

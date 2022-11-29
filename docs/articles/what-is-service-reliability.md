@@ -63,8 +63,27 @@ Where RWᵢ or reliability weight is a weight that denotes the importance of a c
 ## Service Reliability
 The weighted sum of the probabilities of actual state transitions of a service complying with the expected state transitions of the same service.
 
-## Relation of Service Level Objectives and Tr_Target
-An SLO is basically a proportion of good events over all events that happened during a service's SLO time window. From a service reliability equation perspective, an SLO is basically one of the Tr_Targets with a specific compliance evaluation window.
 
-**Concrete Example**
-Let us say we have an SLO of SUM_NON_5XX_HTTP_REQUESTS / SUM_ALL_HTTP_REQUESTS that must be 99%. The SUM_NON_5XX_HTTP_REQUESTS is the service state transitions TrAᵢ that complied with TrEᵢ and the SUM_NON_5XX_HTTP_REQUESTS is all the service state transitions that happen in a service's lifetime. Dividing these two variables is equivalent to the sum of favorable events over the total events which is basically a function to get the probability of the numerator.
+## Choosing Tr_Expected
+So far the definition of service reliability is agnostic to the perspective of which [service modifier](/documentation/service-modifier.md) perceives it. This is an important feature because in practice **which perspective matters is usually a business choice**.
+
+However, most of the time if not all of the time, SRE Science chooses the perspective of the typical human user or "the customer" as a business would call it. The reason for this is that the human user's service requirements are the ultimate reason why services exist and consequently why service reliability is necessary.
+
+**Tr_Expected must be primarily viewed from the perspective of a human service user that can be equated to a customer of a concrete example of a business providing software services.**
+
+## Concrete Example
+Using our [naive cloud storage service](/documentation/service#naive-cloud-storage-service-example) example, we can see that the **UploadProgress** state has a field called **expect**. This field describes Tr_Expected.
+
+```
+- name: UploadInProgress
+description: Service is uploading chunks of client file data.
+expect:
+    - User must be presented with an upload progress widget updated with progress values from 0% to 100% in real-time
+```
+
+Looks familiar? This is fundamentally a Product Owner's acceptance criteria in the world of Scrums.
+
+
+## Finding Service Reliability's Value
+As you might notice, this is where Service Reliability's value can be found, from the perspective of a customer, otherwise what is the value of 99.999% reliable system if it cannot be calculated to relate to a customer's experience? It is important to mention that there are architectural patterns for improving reliability, however, in practice, their effects are in a wide spectrum of cost efficiency and customer satisfaction, therefore from a business perspective, their negative effects can be either operationally costly or unnecessary. We may loosely call these effects **service entropy**.
+

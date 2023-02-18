@@ -1,0 +1,1 @@
+import{_ as e,c as t,o as a,d as i}from"./app.7e97e3a5.js";const h=JSON.parse('{"title":"Observability","description":"","frontmatter":{},"headers":[],"relativePath":"documentation/observability.md"}'),o={name:"documentation/observability.md"},s=i("",5),r=[s];function n(l,c,b,_,p,d){return a(),t("div",null,r)}const m=e(o,[["render",n]]);export{h as __pageData,m as default};

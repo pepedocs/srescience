@@ -27,7 +27,7 @@ Below we reuse the *finite-state machine* (FSM) model to define a service becaus
 >  **ServiceEnd** = A set of service states that can happen last in S's lifetime.
 
 ## Service Lifetime
-A service state **S**'s lifetime is the duration that starts from when S's ServiceStart became active for the first time and ends when S's ServiceEnd became active for the last time.
+A service **S**'s lifetime is the duration that starts from when S's ServiceStart became active for the first time and ends when S's ServiceEnd became active for the last time.
 <br/>
 
 To reinforce the knowledge of expressing a service using FSM primitives the following is provided to demonstrate how this expression can be applied to a naive cloud storage service.

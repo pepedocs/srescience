@@ -3,4 +3,4 @@
 
 2. Enable the SRE community to use fundamental models of SRE to design and implement SRE.
 
-3. Ultimately build a theoretical framework of service reliability.
+3. Ultimately build a theoretical foundation of service reliability.

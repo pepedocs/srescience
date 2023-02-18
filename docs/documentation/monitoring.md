@@ -2,17 +2,17 @@
 > **Formal Definition**: Monitoring is an automation strategy for inferring and presenting service states given a collection of service variables.
 <br/>
 
-<br/>
-In practice, the set of service variables is presented as metrics and is usually in a time-series data type. Inference of service states is achieved by the evaluation of a rule expressed in a specific monitoring platform query language.
-<br/>
+It’s therefore an automation strategy with the following end goals.
 
+- Infer service states
+- Present service states
 
-## Parts of Monitoring
-As defined, monitoring can be divided into two important parts. One is the **inference of service states** and the second one is for the **presentation of these inferred service states**.
+We use the term “automation strategy” here because the goals identified must all be achieved through software automation. In contrast, manually inferring service states such as running complex system commands would require a service modifier to determine combinations of these system commands, parse their output into something consumable, then finally interpret this output into a service state.
+Service monitoring and observability automate all these manual methods so that their service modifiers can focus more on their core intents and ultimately gain value from them. 
+Using the cloud storage service example, a service modifier such as an engineer would need to know the following service states happened in order to know that there were no errors during the file upload;
 
+- UploadInProgress
+- U̶p̶l̶o̶a̶d̶F̶a̶i̶l̶e̶d̶
+- UploadFinished
 
-## Inference in Monitoring
-Methods of inference are implementation details however one of the most common ones is by using a query language to query a service state from a database of observability metrics.
-
-## Presentation in Monitoring
-Like inference in monitoring, presentation methods in monitoring are also an implementation detail. Two of the most common methods are visualizing service states in a visualization system and presenting service states as an alert in an incident management system.
+If the goals above aren’t guaranteed, then it’s likely that automation is not a central purpose of monitoring or observability implementation. In this case, any service modifier can be subjective about the values that it brings.

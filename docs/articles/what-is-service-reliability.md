@@ -1,6 +1,6 @@
 # What is Service Reliability?
 
-> **Formal Definition**: Service reliability is equal to the weighted sum of the probabilities of actual state transitions of a service complying with the expected state transitions of the same service.
+> **Formal Definition**: Service reliability is equal to the weighted sum of the probabilities of actual state transitions of a service complying with its expected state transitions.
 
 Before we can define service reliability we have to define first a few other important characteristics of a [service](/documentation/service.md).
 
@@ -14,7 +14,7 @@ Each service state transition TrEᵢ is a triple composed of the start state, en
 `TrEᵢ = {TrE_StartStateᵢ, TrE_EndStateᵢ, TrE_Inputᵢ}`
 
 ## Concrete Example
-In practice, these expected service state transitions are the expected behavior of any aspect of a service due to how it was designed as a software service solving a particular business problem. For example, an online banking website must enable its users to log in (start state) using a login form, and when the login is successful it must present the user with a home page (end state) that contains a summary of his or her transactions.
+In practice, these expected service state transitions are the expected behavior of any aspect of a service due to how it was designed as a software service solving a particular business problem. For example, an online banking website must enable its users to log in (start state) using a login form, and when the login is successful it must present the user with a home page (end state) that contains a summary of that user's transactions.
 
 ## Tr_Actual
 A set of service state transitions that have happened during a service's lifetime.
@@ -61,7 +61,7 @@ Where RWᵢ or reliability weight is a weight that denotes the importance of a c
 
 
 ## Service Reliability
-The weighted sum of the probabilities of actual state transitions of a service complying with the expected state transitions of the same service.
+The weighted sum of the probabilities of actual state transitions of a service complying with its expected state transitions.
 
 
 ## Choosing Tr_Expected
@@ -81,9 +81,9 @@ expect:
     - User must be presented with an upload progress widget updated with progress values from 0% to 100% in real-time
 ```
 
-Looks familiar? This is fundamentally a Product Owner's acceptance criteria in the world of Scrums.
+Looks familiar? This is fundamentally a Product Owner's acceptance criteria in the world of Scrums. 
 
 
 ## Finding Service Reliability's Value
-As you might notice, this is where Service Reliability's value can be found, from the perspective of a customer, otherwise what is the value of 99.999% reliable system if it cannot be calculated directly to a customer's experience? It is important to mention that there are architectural patterns for improving reliability that became design conventions from a service design point-of-view, however, in practice, their effects are in a wide spectrum of cost efficiency and customer satisfaction, therefore from a business perspective, their negative effects can be either operationally costly or unnecessary. We may loosely call these effects **service entropy**.
+As you might notice, this is where Service Reliability's value can be found, from the perspective of a customer, otherwise what is the value of 99.999% reliable system if it cannot be calculated directly to a customer's experience? It is important to mention that there are great architectural patterns for improving reliability that became design conventions from a service design point-of-view, however, in practice, their effects are in a wide spectrum of cost efficiency and customer satisfaction, therefore from a business perspective, their negative effects can be either operationally costly or unnecessary. We may loosely call these effects **service entropy** especially if their effects are difficult to quantify from a reliability perspective.
 

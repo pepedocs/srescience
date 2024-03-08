@@ -1,5 +1,5 @@
 # About
-Hello! I am [Jose Cueto](https://www.linkedin.com/in/josegavinecueto/) and I am the primary author of SRE Science. Thank you for visiting SRE Science!
+Hello! I am [Jose Cueto](https://www.linkedin.com/in/josegavinecueto/) and I am the primary author of SRE Science. Thank you for visiting!
 
 <br/>
 

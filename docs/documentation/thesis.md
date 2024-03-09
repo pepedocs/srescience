@@ -1,3 +1,15 @@
+---
+title: SRE Science | Thesis
+editLink: false
+head:
+  - - meta
+    - name: Thesis
+    - content: |
+        The lack of fundamental models in the current implementations of SRE poses a limitation to the evolution of the SRE practice into a scientific field of study.
+
+---
+
+
 # Thesis
 The lack of fundamental models in the current implementations of SRE poses a limitation to the evolution of the SRE practice into a scientific field of study.
 <br/><br/>

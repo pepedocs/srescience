@@ -1,3 +1,13 @@
+---
+title: SRE Science | Observability
+editLink: false
+head:
+  - - meta
+    - name: Observability
+    - content: |
+        What is observability?
+---
+
 # Observability
 > **Formal Definition**: Observability is a strategy that exposes service variable values to enable monitoring of a service.
 <br/>

@@ -1,3 +1,13 @@
+---
+title: SRE Science | Service
+editLink: false
+head:
+  - - meta
+    - name: Service 
+    - content: |
+        A service is a finite-state machine.        
+---
+
 # Service
 SRE practices can be reduced to their core subject - the abstract version of a software service.
 

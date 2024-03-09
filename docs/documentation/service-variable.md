@@ -1,3 +1,13 @@
+---
+title: SRE Science | Service Variable
+editLink: false
+head:
+  - - meta
+    - name: Service Variable
+    - content: |
+        A service state St is a set of service variables that can happen in at least one of St's lifetimes.
+---
+
 # Service Variable
 
 > **Formal Definition**: A service variable is a mutable attribute of a service state.

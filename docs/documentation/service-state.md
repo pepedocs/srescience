@@ -1,14 +1,27 @@
+---
+title: SRE Science | Service State
+editLink: false
+head:
+  - - meta
+    - name: Service State
+    - content: |
+        A service state St is a set of service variables that can happen in at least one of St's lifetimes.
+---
+
 # Service State
 
 > **Formal Definition**: A service state **St** is a set of [service variables](./service-variable.md) that can happen in at least one of St's lifetimes.
 
 
 ## Active or Inactive Service State
-An **active service state** St means that it is its parent service's current service state and therefore it's currently happening, otherwise, it is an **inactive service state**.
+An **active service state** St means that it is the current service state and therefore it's currently happening, otherwise, it is an **inactive service state**.
 
 ## Service State Lifetime
 A service state **St**'s lifetime is the duration that starts from when it was transitioned to by a previous active service state **St - 1** and ends right before it transitions to the next active service state **St + 1**.
-St can become active at any time depending on the availability of its parent's ServiceTransitionFunctions and the future ServiceInputs encountered, therefore St can have multiple lifetimes.
+St can become active at any time depending on the availability of its service's ServiceTransitionFunctions and the future ServiceInputs encountered, therefore St can have multiple lifetimes.
+
+## Concrete Example
+An **UploadInProgress** state of a naive cloud storage service can activate and deactivate (or Inactive) and this is equivalent to one lifetime. However, it can get re-activated when a a file is uploaded by a different user thus it can have multiple lifetimes.
 
 ## Child of a Service
 A service **S**'s **child** is a service state **St** that can happen sometime in S's lifetime.

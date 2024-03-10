@@ -12,6 +12,13 @@ export default {
         gtag('js', new Date());
         gtag('config', 'G-55B4X6Y17Y');`
       ]
-    ]
+    ],
+    themeConfig: {
+      socialLinks: [
+        { icon: 'linkedin', link: 'https://www.linkedin.com/in/josegavinecueto/' },
+        { icon: 'github', link: 'https://github.com/pepedocs/srescience' },
+      ]
+    }    
   }
   
+

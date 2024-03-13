@@ -1,5 +1,10 @@
 
 export default {
+  lastUpdated: true,
+  sitemap: {
+    hostname: 'https://srescience.com',
+    lastmodDateOnly: false
+  },  
   head: [
     [
       'script',
@@ -12,11 +17,15 @@ export default {
       function gtag(){dataLayer.push(arguments);}
       gtag('js', new Date());
       gtag('config', 'G-55B4X6Y17Y');`
-    ]
+    ],
+    ['link', { rel: 'icon', href: '/images/favicon.ico' }]
   ],  
   title: 'srescience',
   description: 'Site-Reliability Engineering Science',
   themeConfig: {
+    search: {
+      provider: 'local'
+    },
     socialLinks: [
       { icon: 'linkedin', link: 'https://www.linkedin.com/in/josegavinecueto/' },
       { icon: 'github', link: 'https://github.com/pepedocs/srescience' },

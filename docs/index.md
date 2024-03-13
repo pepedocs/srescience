@@ -3,8 +3,10 @@ layout: home
 
 hero:
   name: SRE Science
-  tagline: Defining SRE.
-
+  text: Defining SRE.
+  tagline: Site-Reliability Engineering
+  image:
+    src: /images/sr.png
   actions:
     - theme: brand
       text: Articles
@@ -15,5 +17,4 @@ hero:
     - theme: alt
       text: View on GitHub
       link: https://github.com/pepedocs/srescience
-
 ---

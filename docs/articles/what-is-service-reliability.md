@@ -2,6 +2,7 @@
 
 > **Formal Definition**: Service reliability is equal to the weighted sum of the probabilities of actual state transitions of a service complying with its expected state transitions.
 
+
 Before we can define service reliability we have to define first a few other important characteristics of a [service](/documentation/service.md).
 
 ## Tr_Expected
@@ -83,7 +84,26 @@ expect:
 
 Looks familiar? This is fundamentally a Product Owner's acceptance criteria in the world of Scrums. 
 
-
 ## Finding Service Reliability's Value
 As you might notice, this is where Service Reliability's value can be found, from the perspective of a customer, otherwise what is the value of 99.999% reliable system if it cannot be calculated directly to a customer's experience? It is important to mention that there are great architectural patterns for improving reliability that became design conventions from a service design point-of-view, however, in practice, their effects are in a wide spectrum of cost efficiency and customer satisfaction, therefore from a business perspective, their negative effects can be either operationally costly or unnecessary. We may loosely call these effects **service entropy** especially if their effects are difficult to quantify from a reliability perspective.
 
+
+> **Analogy**: Jane love's fishing and on the weekend will be her 100th fishing session. Jane is smart and she realized after her 5th fishing session the 3 most important things she needs to bring with her to make her fishing experience a blast are, in order of importance, a cold 6-pack beer, her wireless earphones, and of course her mobile phone. From then on, Jane tried her best to ensure these items were available and functional to have a great fishing experience. Although sometimes he forgets to charge her smart phone and thus it has caused her a little bit of inconvenience.
+> 
+> A **state transition** is analogous to Jane starting **from** a state where she didn't have these items **to** a state where these items availability are updated which in this case when she was in her desired fishing spot. 
+The **expected state transition** is that she expects that 100% of these items are available and functional.
+>
+>An example of an **actual state transition** is when she brought all these items but her mobile phone had a low battery.
+>
+>Jane has a preference of these items and she thinks that without beer to drink fishing is almost pointless. But also it's useful to listen to music when nature sound is too boring. One could add weight values to these preference such as, 0.98 for beer and 0.01 for both of the earphones and the mobile phone. 
+>
+> One could evaluate reliability in Jane's case as:
+>
+>  - 0.98(beer) + 0.01(phone) + 0.01(earphones)
+>
+> Where beer, phone and earphones are the probability of actually having them in the actual state which is the fishing spot.
+>
+> Therefore to simplify the reliability of Jane making her fishing experience a blast is:
+>
+> - 0.98(P(beer)) + 0.01(P(phone)) + 0.01(P(earphones))
+> where P is "probability of" in the value range of 0 to 1.

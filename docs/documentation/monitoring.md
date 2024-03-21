@@ -8,6 +8,8 @@ head:
         What is monitoring?
 ---
 
+**IMPORTANT:** With the new discovery in [Service State Consumption Methods](./methods-of-service-state-consumption.md), the following definition is not anymore necessary because for the purpose of srescience, Monitoring and Observability are not fundamental concepts and therefore they can be implemented in different ways.
+
 # Monitoring
 > **Formal Definition**: Monitoring is an automation strategy for inferring and presenting service states given a collection of service variables.
 

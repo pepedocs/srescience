@@ -88,6 +88,7 @@ export default {
         {
           text: "Derivatives",
           items: [
+            { text: 'Methods of Service State Consumption', link: '/documentation/methods-of-service-state-consumption' },
             { text: 'Observability', link: '/documentation/observability' },
             { text: 'Monitoring', link: '/documentation/monitoring' }
           ]
